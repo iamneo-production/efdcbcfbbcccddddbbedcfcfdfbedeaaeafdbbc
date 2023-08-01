@@ -103,3 +103,23 @@ function App() {
           }} > </Card>)
       }
     </div> 
+
+    startBtn = <></>;
+  }
+  else
+  {
+    startBtn = <Button onClick = {handleStart}>Start Quiz</Button>;
+  }
+  
+  return (
+    <div className="App">
+      <h1>
+        Quizz App
+      </h1>
+      {qCards}
+      {startBtn}
+    </div>
+  );
+}
+
+export default App;
